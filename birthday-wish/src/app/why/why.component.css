@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
 .bio-content {
   display: flex;
@@ -24,8 +24,8 @@
 }
 
 .bio-text {
-  font-family: "Butterfly Kids", cursive;
-  font-size: 2.5rem;
+  font-family: "Delius", cursive;
+  font-size: 1.5rem;
   line-height: 2.2rem;
   color: #5a3921;
   height: 100%;

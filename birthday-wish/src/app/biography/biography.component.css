@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+:host {
+  display: block;
+  font-family: 'Georgia', serif;
+  background-color: #f9f5ec;
+  color: #3e2c1c;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.bio-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .bio-content {
+    flex-direction: row;
+  }
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.bio-text {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #5a3921;
+  /* Removed height: 100% */
+}
+
+.title-text {
+  font-family: "Charm", cursive;
+  color: #5a3921;
+}
+
+.bio-img {
+  width: 100%;
+  height: auto; /* Let it adjust based on width */
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bio-images {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn-custom {
+  color: #5a3921;
+  border: 2px solid #5a3921;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #5a3921;
+  color: white;
+}

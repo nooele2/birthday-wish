@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
+:host {
+  display: block;
+  font-family: 'Georgia', serif;
+  background-color: #f9f5ec;
+  color: #3e2c1c;
+  min-height: 100vh;
+}
+
+.favorites-container {
+  padding: 2rem;
+  background-color: #f9f5ec;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.title-text {
+  font-family: "Charm", cursive;
+  color: #5a3921;
+  font-size: 4rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: start;
+}
+
+.image-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.02);
+}
+
+.image-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn-custom {
+  color: #5a3921;
+  border: 2px solid #5a3921;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #5a3921;
+  color: white;
+}
+
+

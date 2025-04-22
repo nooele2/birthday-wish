@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+:host {
+  display: block;
+  font-family: 'Georgia', serif;
+  background-color: #f9f5ec;
+  color: #3e2c1c;
+  min-height: 100vh;
+}
+
+/* Title Style */
+.angel-title {
+  font-family: "Italianno", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #5a3921;
+  text-shadow: 1px 1px #e6dccf;
+}
+
+.wish-text {
+  max-width: 90%;
+  word-wrap: break-word;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Button Custom Style */
+.btn-lg-custom {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 1.3rem;
+  border-radius: 0;
+  font-family: 'Georgia', serif;
+  border: 2px solid #5a3921;
+  color: #5a3921;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #5a3921;
+    color: #fff;
+    border-color: #5a3921;
+  }
+}
+
+/* Card Section Background */
+.bg-light-classic {
+  background-color: #f3efe2;
+  border: 1px solid #ddd0bd;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(100, 83, 65, 0.2);
+}
+
+/* Image Size Control */
+.angel-img {
+  max-height: 250px;
+  object-fit: contain;
+  margin-right: 1.5rem;
+}
+
+/* Mobile Fixes */
+@media (max-width: 767.98px) {
+  .angel-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .btn-lg-custom {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .angel-img {
+    margin-right: 0;
+  }
+
+  .bg-light-classic {
+    padding: 1.5rem;
+  }
+}
+
+/* iPad (Tablet) Fixes */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .angel-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .angel-img {
+    max-height: 200px;
+  }
+
+  .bg-light-classic {
+    padding: 1.5rem;
+  }
+}

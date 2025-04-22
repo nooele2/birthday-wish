@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  height: 100vh;
+  background-color: #d9d7c8; /* match your current tone */
+  margin: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

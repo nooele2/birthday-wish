@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/bio",
+    "/favorites",
+    "/home",
+    "/why"
+  ]
+}
